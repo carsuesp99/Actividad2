@@ -433,6 +433,7 @@ GameObject:
   - component: {fileID: 1815233959}
   - component: {fileID: 1815233961}
   - component: {fileID: 1815233960}
+  - component: {fileID: 1815233962}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -468,9 +469,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":0.0,"y":0.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-204.0,"y":-144.0},"guid":"e71daeab-dc63-4887-aa08-f500703144af","$version":"A","$type":"Unity.VisualScripting.Start","$id":"10"},{"chainable":false,"member":{"name":"print","parameterTypes":["System.Object"],"targetType":"UnityEngine.MonoBehaviour","targetTypeName":"UnityEngine.MonoBehaviour","$version":"A"},"defaultValues":{},"position":{"x":27.0,"y":-154.0},"guid":"ab46530b-ae8a-41f9-90f4-39da47a1a2ca","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"12"},{"type":"System.String","value":{"$content":"Hello
-      World","$type":"System.String"},"defaultValues":{},"position":{"x":-200.0,"y":-25.0},"guid":"ceb1df2e-6453-4b1e-a694-f4a023cca88f","$version":"A","$type":"Unity.VisualScripting.Literal","$id":"15"},{"sourceUnit":{"$ref":"10"},"sourceKey":"trigger","destinationUnit":{"$ref":"12"},"destinationKey":"enter","guid":"84dd283e-2834-40f4-99fa-afe44874059f","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"output","destinationUnit":{"$ref":"12"},"destinationKey":"%message","guid":"936e1f17-9ed4-4ca2-b7cf-535733aaebb5","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}}'
-    _objectReferences: []
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 1c13287d474b714499efd9f0d2aebf16, type: 2}
 --- !u!114 &1815233961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -484,5 +485,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"HelloWorld","value":{"$content":"Hello
+      World","$type":"System.String"},"typeHandle":{"Identification":"System.String,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
+--- !u!114 &1815233962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815233956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72add37682fc2c845abbed073e9adc0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  helloWorld: Hello World!
